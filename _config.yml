@@ -9,12 +9,12 @@ markdown: kramdown
 
 # The title and tagline is showed on homepage
 #
-title :  ZhanYaru 
-tagline: zhanyr's Blog
+title :  zhanyr¡®s personal blog
+tagline : blog list
 
 # Information about author
 #
-author :
+author : 
   name : Yaru Zhan
   
 # Information for contacts showed at on the footer

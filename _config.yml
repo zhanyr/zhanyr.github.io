@@ -21,9 +21,8 @@ author :
 # Information for contacts showed at on the footer
 #
 contact :
-  e-mail : zhanyr111@163.com
+  e-mail : mailto:zhanyr111@163.com
   Github : https://github.com/zhanyr
-  QQ : 476242308
   
 # Links showed on the footer
 #

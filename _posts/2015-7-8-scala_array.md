@@ -8,6 +8,7 @@ tags: [Scala]
 数组是定义数据类型很基础的容器,是一种非常重要的数据结构。围绕数组的操作也非常重要。
 
 <!--more-->
+
 ###定义数组类型
 
 	var array1 = new Array[Int](10)
@@ -27,9 +28,12 @@ Scala具有强大的类型推导能力去判断数组中赋值的类型:
 ###数组元素读取及遍历
 
 ####读取
+
 	println(arrayInt(0))
 	println(arrayString(0))
+
 ####遍历
+
 	for(elem <- arrayString)
 		println(elem)
 	for(elem <- arrayInt)

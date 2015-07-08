@@ -92,8 +92,7 @@
 	width: 48px;
 	margin:12px auto 0;
 	height:49px;
-	/**background:url('../../img/journal/category-icons/other.png');*/
-	background-color:#5DC2F7;
+	background:url('../../img/journal/category-icons/other.png');
 	line-height:49px;
 	text-overflow: ellipsis;
 }

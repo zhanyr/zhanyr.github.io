@@ -78,7 +78,6 @@ Scala具有强大的类型推导能力去判断数组中赋值的类型:
 	val matrix = Array.ofDim[Double](2,3) //定义一个2行三列的数组
 	matrix(1,2) = 2 //给第二行第三列赋值
 	val triangle = new Array[Array[Int]](10)//数组中嵌套数组，其中内部数组的长度待定
-	
-	
 
+  
 

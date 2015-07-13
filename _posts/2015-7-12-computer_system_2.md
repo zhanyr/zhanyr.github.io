@@ -24,8 +24,8 @@ tags: [System, C]
 ###数据大小
 
 
-C声明|char|short|int|long int|long long int|char *|folat|double
-----|----|------|---|-------|-------------|-------|----|----
+C声明| char | short | int | long int | long long int | char * | folat | double
+----:|:----:|:------:|:---:|:-------:|:-------------:|:-------:|:----:|:----
 32位机器|1|2|4|4|8|4|4|8
 64位机器|1|2|4|8|8|8|4|8
 

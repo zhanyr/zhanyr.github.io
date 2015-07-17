@@ -24,11 +24,11 @@ AbstractClass.java
 
 	public abstract class AbstractClass {
 		public abstract void method1();
-       public abstract void method2();
-       public void templateMethod(){
-       		System.out.println("templateMethod");
-        		method1();
-        		method2();
+		public abstract void method2();
+		public void templateMethod(){
+			System.out.println("templateMethod");
+			method1();
+			method2();
     	}
 	}
 
@@ -79,27 +79,27 @@ ConcreteClassB.java
 论文抽象类:AbstractPaper.java
 
 	public abstract class AbstractPaper {
-    		public abstract void writeTitle();
-    		public abstract void writeAbstract();
-    		public abstract void writeIntroduction();
-    		public abstract void writeResearch();
-    		public abstract void writeSummary();
-    		public abstract void writeReference();
+		public abstract void writeTitle();
+		public abstract void writeAbstract();
+		public abstract void writeIntroduction();
+		public abstract void writeResearch();
+		public abstract void writeSummary();
+		public abstract void writeReference();
 
-    		public void writePaper(){
-        		System.out.print("题目：");
-        		writeTitle();
-        		System.out.print("摘要：");
-        		writeAbstract();
-        		System.out.print("引言：");
-        		writeIntroduction();
-        		System.out.print("研究内容：");
-        		writeResearch();
-        		System.out.print("总结：");
-        		writeSummary();
-        		System.out.print("参考文献：");
-        		writeReference();
-    		}
+		public void writePaper(){
+			System.out.print("题目：");
+			writeTitle();
+			System.out.print("摘要：");
+			writeAbstract();
+			System.out.print("引言：");
+			writeIntroduction();
+			System.out.print("研究内容：");
+			writeResearch();
+			System.out.print("总结：");
+			writeSummary();
+			System.out.print("参考文献：");
+			writeReference();
+		}
 	}
 	
 A同学写的论文:YangxyPaper.java
@@ -107,33 +107,33 @@ A同学写的论文:YangxyPaper.java
 	public class YangxyPaper extends AbstractPaper {
     	@Override
     	public void writeTitle() {
-        	System.out.println("论设计模式重要性");
+			System.out.println("论设计模式重要性");
     	}
 
     	@Override
     	public void writeAbstract() {
-        	System.out.println("设计模式是一套被反复使用、多数人知晓的、" +
+			System.out.println("设计模式是一套被反复使用、多数人知晓的、" +
                 "经过分类编目的、代码设计经验的总结");
     	}
 
     	@Override
     	public void writeIntroduction() {
-        	System.out.println("很多框架都用到了设计模式");
+			System.out.println("很多框架都用到了设计模式");
     	}
 
     	@Override
     	public void writeResearch() {
-        	System.out.println("设计模式很重要");
+			System.out.println("设计模式很重要");
     	}
 
     	@Override
     	public void writeSummary() {
-        	System.out.println("设计模式确实很重要");
+			System.out.println("设计模式确实很重要");
     	}
 
     	@Override
     	public void writeReference() {
-        	System.out.println("设计模式");
+			System.out.println("设计模式");
     	}
 	}
 
@@ -142,32 +142,32 @@ B同学写的论文:ZhanyrPaper.java
 	public class ZhanyrPaper extends AbstractPaper {
     	@Override
     	public void writeTitle() {
-        	System.out.println("论吃的重要性");
+			System.out.println("论吃的重要性");
     	}
 
     	@Override
     	public void writeAbstract() {
-        	System.out.println("活着就是要吃");
+			System.out.println("活着就是要吃");
     	}
 
     	@Override
     	public void writeIntroduction() {
-        	System.out.println("不吃会饿啊");
+			System.out.println("不吃会饿啊");
     	}
 
     	@Override
     	public void writeResearch() {
-        	System.out.println("吃是为了活着，活着不是为了吃");
+			System.out.println("吃是为了活着，活着不是为了吃");
     	}
 
     	@Override
     	public void writeSummary() {
-        	System.out.println("吃确实很重要");
+			System.out.println("吃确实很重要");
     	}
 
     	@Override
     	public void writeReference() {
-        	System.out.println("十二道锋味");
+			System.out.println("十二道锋味");
     	}
 	}
 	
@@ -175,14 +175,14 @@ B同学写的论文:ZhanyrPaper.java
 
 	public class WriterPaperTest {
     	@Test
-    	public void test(){
-        	System.out.println("Yxy的paper:");
-        	AbstractPaper yangxyPaper = new YangxyPaper();
-        	yangxyPaper.writePaper();
-        	System.out.println("Zhanyr的paper:");
-        	AbstractPaper zhanyrPaper = new ZhanyrPaper();
-        	zhanyrPaper.writePaper();
-    	}
+		public void test(){
+			System.out.println("Yxy的paper:");
+			AbstractPaper yangxyPaper = new YangxyPaper();
+			yangxyPaper.writePaper();
+			System.out.println("Zhanyr的paper:");
+			AbstractPaper zhanyrPaper = new ZhanyrPaper();
+			zhanyrPaper.writePaper();
+		}
 	}
 	
 结果:

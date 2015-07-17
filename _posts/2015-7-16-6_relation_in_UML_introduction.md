@@ -26,15 +26,15 @@ UML(unified modeling language,标准建模语言)类图用来描述系统中类�
 	
 	public class Boat {
 		public void crossRiver(){
-        System.out.println("boat crossRiver");
+			System.out.println("boat crossRiver");
     	}
     }
     
     public class Person {
     	//Boat在Person类的方法中被调用
     	public void crossRiver(){
-       	Boat boat = new Boat();
-       	boat.crossRiver();
+       		Boat boat = new Boat();
+       		boat.crossRiver();
     	}
 	 }
 
@@ -142,7 +142,7 @@ UML(unified modeling language,标准建模语言)类图用来描述系统中类�
 	public class Donald implements SpeakIntf {
 		@Override
 		public void speak() {
-       	System.out.println("donald speak");
+       		System.out.println("donald speak");
     	}
 	}
 	

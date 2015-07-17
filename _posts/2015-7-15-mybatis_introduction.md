@@ -3,7 +3,7 @@ layout: post
 category: SQL
 title: MyBatis之(一)入门
 tagline: by zhanyr
-tags: [MyBatis, SQL]
+tags: [MyBatis, Mysql]
 ---
 
 MyBatis是支持定制化SQL、存储过程以及高级映射的持久层框架。它避免了JDBC中手动设置参数以及获取结果集的缺点。可以对配置和原生Map使用简单的XML或注解，将接口和Java的POJO映射成数据库中的记录。

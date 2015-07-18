@@ -41,7 +41,7 @@ UML(unified modeling language,标准建模语言)类图用来描述系统中类�
 
 ##关联(Association)
 
-**含义：**使一个类知道另一个类的属性和方法，如A关联B，则B体现为A的全局变量，如员工和公司
+**含义：**使一个类知道另一个类的属性和方法，如A关联B，则B体现为A的全局变量，如一般类和Util类
 
 **表示：**实线+箭头，箭头指向被关联的类，可以为双向和单向
 	
@@ -56,8 +56,8 @@ UML(unified modeling language,标准建模语言)类图用来描述系统中类�
 
 **代码：**
 	
-	public class Company{
-		private Employee employee;
+	public class SomeClass{
+		private SomeUtil util;
 		...
 	}
 

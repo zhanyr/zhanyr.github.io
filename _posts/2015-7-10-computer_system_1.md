@@ -3,7 +3,7 @@ layout: post
 category: System
 title: 深入理解计算机系统之计算机系统漫游
 tagline: by zhanyr
-tags: [System, C]
+tags: [System]
 ---
 系统中的所有信息——包括磁盘文件、程序、用户数据以及网络中传输的数据，都是由一串位表示的，8个位为一个字节。
 

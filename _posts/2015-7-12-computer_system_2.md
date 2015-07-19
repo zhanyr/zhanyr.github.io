@@ -3,7 +3,7 @@ layout: post
 category: System
 title: 深入理解计算机系统之信息的表示和处理
 tagline: by zhanyr
-tags: [System, C]
+tags: [System]
 ---
 孤立的讲，单个的位不是非常有用，但是当把位组合在一起，再加上某种解释，就能够表示任何有限集合的元素，如通过标准的字符码给26个英文字母进行编码。
 

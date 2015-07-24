@@ -1,7 +1,7 @@
 ---
 layout: post
 category: SQL
-title: MyBatis之(二)Xml映射配置文件
+title: MyBatis之(二)Xml配置文件
 tagline: by zhanyr
 tags: [MyBatis, Mysql]
 ---

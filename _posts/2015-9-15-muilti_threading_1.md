@@ -58,9 +58,8 @@ public class Demo1 implements Runnable {
 
 	@Override
 	public void run() {
-		int i = 0;
-		while(i <= 100){
-			System.out.println(Thread.currentThread()+"run----"+ticket--);
+		for(int i =0;i<100;i++){
+			System.out.println(Thread.currentThread().getName()+"run----"+i);
 		}
 
 	}
@@ -73,6 +72,7 @@ public class Demo1 implements Runnable {
 		t2.start();
 	}
 }
+
 ```
 
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 category: elasticsearch
-title: (一)ES简介
+title: (一)Elasticsearch简介
 tagline: by Zhanyr
 tags: [elasticsearch, lucene]
 ---

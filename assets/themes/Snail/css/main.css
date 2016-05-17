@@ -373,6 +373,16 @@ nav #nav-c form#nav-search {
 	height:53px;
 	vertical-align:middle;
 }
+
+nav #nav-c div#nav-search {
+	display:table-cell;
+	width:100%;
+	padding:0 15px;
+	line-height:53px;
+	height:53px;
+	vertical-align:middle;
+}
+
 nav #nav-c div#nav-sep {
 	width:0;
 	height:0;

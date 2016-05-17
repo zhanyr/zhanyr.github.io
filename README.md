@@ -1,4 +1,4 @@
-# ZhanyrBlog
+# Simpleyyt
 
 My blog based on Jekyll-Bootstrap.
 

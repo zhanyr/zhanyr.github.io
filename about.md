@@ -4,7 +4,7 @@ title: About Me
 header: About Me
 group: navigation
 ---
- * **Name:** zhanyr
- * **QQ:** 476242308
- * **Email:** [zhanyr111@163.com](mailto:zhanyr111@163.com)
- * **Github:** [zhanyr](https://github.com/zhanyr)
+ * **Name:** Yitao Yao
+ * **Email:** [simpleyyt@gmail.com](mailto:simpleyyt@gmail.com)
+ * **WeiBo:** [摇一摇SimpleLife](http://www.weibo.com/u/1836017133)
+ * **Github:** [Simpleyyt](https://github.com/Simpleyyt)

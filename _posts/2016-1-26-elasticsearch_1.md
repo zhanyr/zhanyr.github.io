@@ -9,7 +9,8 @@ Elasticsearch是一个基于Lucene的搜索服务器，提供了一个分布式�
 
 <!--more-->
 
-###elasticsearch介绍
+### elasticsearch介绍
+
 Lucene是当今最先进，最高效的全功能开源搜索引擎框架,但是使用起来特别麻烦。Elasticsearch使用Lucene作为内部引擎，只需要了解统一的API就可以可以使用。
 当然Elasticsearch并不仅仅是Lucene这么简单，它不但包括了全文搜索功能，还可以进行以下工作:
 
@@ -21,13 +22,18 @@ c.可以扩展到上百台服务器，处理PB级别的结构化或非结构化�
 
 这么多的功能被集成到一台服务器上，你可以轻松地通过客户端或者任何你喜欢的程序语言与ES的RESTful API进行交流。
 
-###安装
+### 安装
 
-#####1、安装jdk
+##### 1、安装jdk
+
 确保安装Java SE环境，1.7以上版本
-#####2、安装elasticsearch
+
+##### 2、安装elasticsearch
+
 从[elasticsearch官网](https://www.elastic.co/downloads/elasticsearch)下载，解压。即完成安装。
-#####3、配置
+
+##### 3、配置
+
 ES解压之后，到ES对应的目录中发现如下的目录结构：
 
 	bin:运行ES实例和插件管理需要的脚本
@@ -40,7 +46,8 @@ config目录下有两个配置文件：elasticsearch.yml和logging.yml。
 
 第二个文件定义了将多少信息写入系统日志，它定义了日志文件并定期创建新文件。
 
-#####4、运行
+##### 4、运行
+
 bin目录下执行./elasticsearch，就将ES运行起来了。它工作时使用两个端口号，默认情况下，使用http协议与rest api通信的端口为9200，在集群内及java客户端和集群之间通信的端口为9300。
 
 在浏览器中打开http://localhost:9200/
@@ -67,7 +74,8 @@ bin目录下执行./elasticsearch，就将ES运行起来了。它工作时使用
 	plugins:安装的插件
 	work:elasticsearch使用的临时文件
 
-#####5、关闭
+##### 5、关闭
+
 a.如果节点是连接到控制台，ctrl+c
 
 b.kill 命令
@@ -78,7 +86,8 @@ c.使用rest api:
 
 关闭单一节点curl -XPOST http://localhost:9200/_cluster/nodes/节点标识符/_shutdown
 
-###插件：
+### 插件：
+
 集群管理工具：./plugin -install mobz/elasticsearch
 
 集群监控工具：./plugin -install lukas-vlcek/bigdesk

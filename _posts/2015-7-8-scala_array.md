@@ -9,12 +9,12 @@ tags: [Scala]
 
 <!--more-->
 
-###定义数组类型
+### 定义数组类型
 
 	var array1 = new Array[Int](10)
 	var array2 = new Array[String](10)
 	
-###数组元素赋值
+### 数组元素赋值
 Scala具有强大的类型推导能力去判断数组中赋值的类型:
 
 	val arrayInt = Array(1,2,3,4)
@@ -25,14 +25,14 @@ Scala具有强大的类型推导能力去判断数组中赋值的类型:
 
 以上定义都是合法的。
 
-###数组元素读取及遍历
+### 数组元素读取及遍历
 
-####读取
+#### 读取
 
 	println(arrayInt(0))
 	println(arrayString(0))
 
-####遍历
+#### 遍历
 
 	for(elem <- arrayString)
 		println(elem)
@@ -41,7 +41,7 @@ Scala具有强大的类型推导能力去判断数组中赋值的类型:
 	for(elem <- array)
 		println(elem)
 
-###数组基本操作
+### 数组基本操作
 	val b = ArrayBuffer[Int]() //可修改
 	b += 1 //(1)
 	b += (1,2,3,5) //(1,1,2,3,5)
@@ -53,7 +53,7 @@ Scala具有强大的类型推导能力去判断数组中赋值的类型:
 	b.remove(2,3) //从索引为2的位置移除3个元素(1,1,2)
 	val c = b.toArray //变为不可修改数组
 
-###数组进阶操作
+### 数组进阶操作
 	//把数组每个元素乘2并返回集合(4,6,8,10)
 	var c = Array(2,3,4,5)
 	var result = for(elem <- c) yield 2 * elem

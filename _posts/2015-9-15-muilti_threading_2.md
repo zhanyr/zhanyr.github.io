@@ -9,19 +9,19 @@ tags: [multithread, java]
 
 <!--more-->
 
-###同步的前提
+### 同步的前提
 
 * 必须有两个或两个以上的线程
 
 * 必须是多个线程使用同一个锁
 
-###同步的优缺点
+### 同步的优缺点
 
 * 优点：解决了多线程的安全问题 
 
 * 缺点：多个线程需要判断锁，比较消耗资源
 
-###同步函数
+### 同步函数
 
 同步有两种表现形式：同步代码块，同步函数
 
@@ -45,9 +45,9 @@ tags: [multithread, java]
 		
 同步代码块使用的锁是括号中括的obj,同步函数使用的锁是this,静态同步函数使用的锁不再是this,因为静态方法中不可以定义this,静态同步函数的锁是Class对象。（静态进内存时，内存中没有本类对象，但是一定有该类对应的字节码文件对象`本类.class`）
 
-###写一个线程安全的单例模式
+### 写一个线程安全的单例模式
 
-####饿汉式
+#### 饿汉式
 
 	public class ESingle {
 		private  static final ESingle s = new ESingle();
@@ -59,7 +59,7 @@ tags: [multithread, java]
 
 不存在线程安全问题
 
-####懒汉式
+#### 懒汉式
 
 延迟加载
 
@@ -91,11 +91,11 @@ tags: [multithread, java]
 		}
 	}
 
-###死锁
+### 死锁
 
 同步中嵌套同步会造成死锁,线程1持有锁A,想获取锁B,线程2持有锁B,想获取锁A。这个时候会造成死锁。
 
-###写一个死锁的例子
+### 写一个死锁的例子
 
 	public class DeadLock implements Runnable {
 		private boolean flag;

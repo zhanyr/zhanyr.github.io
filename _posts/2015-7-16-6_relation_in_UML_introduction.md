@@ -10,7 +10,7 @@ UML(unified modeling language,标准建模语言)类图用来描述系统中类�
 
 <!--more-->
 
-##依赖(Dependency)
+## 依赖(Dependency)
 
 **含义：**依赖描述了一种类与类之间的使用与被使用的关系，如人过河依赖于船
 
@@ -39,7 +39,7 @@ UML(unified modeling language,标准建模语言)类图用来描述系统中类�
 	 }
 
 
-##关联(Association)
+## 关联(Association)
 
 **含义：**使一个类知道另一个类的属性和方法，如A关联B，则B体现为A的全局变量，如一般类和Util类
 
@@ -61,7 +61,7 @@ UML(unified modeling language,标准建模语言)类图用来描述系统中类�
 		...
 	}
 
-##聚合(Aggregation)
+## 聚合(Aggregation)
 
 **含义：**关联关系的一种特例，体现的是整体拥有部分的关系,整体与部分之间可以分离，拥有各自的生命周期。部分可以属于多个整体。如汽车和轮胎、引擎的关系。汽车坏了，引擎和轮胎可以作为零件继续使用
 
@@ -81,7 +81,7 @@ UML(unified modeling language,标准建模语言)类图用来描述系统中类�
 		...
 	}
 	
-##组合(Composition)
+## 组合(Composition)
 
 **含义：**也是关联关系的一种特例，是一种比聚合更强的关系，整体和部分具有相同的生命周期，当整体不在了，部分同时也就不在了。如人和手、脚的关系
 
@@ -101,7 +101,7 @@ UML(unified modeling language,标准建模语言)类图用来描述系统中类�
     	...
 	}
 
-##泛化(Generalization)
+## 泛化(Generalization)
 
 **含义：**一般与特殊，一般与具体之间的关系，具体建立在特殊之上，并且进行了扩展。如动物和狗之间，狗除了拥有动物的属性之外还有自己特殊的属性
 
@@ -122,7 +122,7 @@ UML(unified modeling language,标准建模语言)类图用来描述系统中类�
 		...
 	}
 
-##实现(Realization)
+## 实现(Realization)
 
 **含义：**类与接口之间的关系，类中是接口中定义方法的具体实现。如唐老鸭实现说话接口
 
@@ -146,7 +146,7 @@ UML(unified modeling language,标准建模语言)类图用来描述系统中类�
     	}
 	}
 	
-##总结
+## 总结
 
 `关联和聚合的区别`
 

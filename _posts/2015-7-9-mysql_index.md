@@ -9,29 +9,29 @@ tags: [Mysql]
 
 <!--more-->
 
-##唯一索引
+## 唯一索引
 
 唯一索引强调唯一，即索引值必须唯一。
 
-####创建索引：
+#### 创建索引：
 
 	create unique index 索引名 on 表名 (列名);
 	alter table 表名 add unique index 索引名 (列名);
 
-####删除索引：
+#### 删除索引：
 
 	drop index 索引名 on 表名;
 	alter table 表名 drop index 索引名；
 
-###主键
+### 主键
 
 主键是唯一索引的一种，主键要求建表时指定，一般用auto_increment列，关键字是`primary key`。
 
-####主键创建：
+#### 主键创建：
 
 	create table test2 (id int not primary key auto_increment);
 
-##全文索引
+## 全文索引
 
 全文索引一般在CHAR、VARCHAR或TEXT列创建。
 
@@ -40,7 +40,7 @@ tags: [Mysql]
 		title varchar(100),FULLTEXT(title)
 	)type=MyISAM;
 
-##单列索引与多列索引
+## 单列索引与多列索引
 
 索引可以是单列索引也可以是多列索引(复合索引)。多列索引的创建如下：
 
@@ -53,15 +53,15 @@ tags: [Mysql]
 
 `注：INDEX(a,b,c)可以当作a或(a,b)的索引来用，但不能当作b、c或(b,c)的索引来使用。这是一个左前缀的优化方法。`
 
-##聚簇索引
+## 聚簇索引
 
 该索引中键值的逻辑顺序决定了表中相应行的物理顺序，可以确定表中数据的物理顺序。
 
-###查看表的索引
+### 查看表的索引
 
 	show index from 表名；
 
-####结果：
+#### 结果：
 
 `Key_name`:什么类型的索引
 
